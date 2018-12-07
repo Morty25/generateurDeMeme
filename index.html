@@ -15,6 +15,28 @@
         </h1>
     </header>
     <section id='carousel'>
+            <?php 
+  header("Content-type: image/png"); 
+  $longueur = 150; 
+  $hauteur = 150; 
+   
+  $image = imagecreatetruecolor($longueur ,$hauteur ); 
+   
+  $rouge = hexdec("cc"); 
+  $vert = hexdec("ff"); 
+  $bleu = hexdec("00"); 
+  $couleur = imagecolorallocate($image,$rouge,$vert,$bleu); 
+     //on écrit un texte horizontal
+  $x= 30 ;
+  $y=10 ;
+  imagestring($image, 2, $x, $y, "Texte horizontal", $couleur);
+  //on écrit un texte vertical
+  $x= 50 ;
+  $y=130 ;
+  imagestringup($image, 2, $x, $y, "Texte vertical", $couleur);
+  imagepng($image); 
+  imagedestroy($image); 
+  ?>
         <!-- ZONE CAROUSELLE -->
     </section>
     <div>
