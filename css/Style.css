@@ -1,8 +1,24 @@
-article
+html, body
 {
-width: 500px;
-height: 500px;
+height:100%;
+width: 100%;
+margin:0px;
+padding:0px;
+}
+body
+{
+text-align: center;
+}
+#article
+{
+width:50%;
+height:800px;
 border : solid black 1px;
+}
+#commande
+{
+display:flex;
+flex-direction: column
 }
 header
 {
@@ -14,4 +30,9 @@ height:200px;
 .flex
 {
 display: flex;
+justify-content: space-around;
+}
+#carousel
+{
+margin-bottom:5%;
 }
