@@ -47,11 +47,12 @@
             </div>
         </section>
     <div class="flex">
-        <article onmousedown="curseur(event);">
+        <article id="article" onmousedown="curseur(event);">
             <div id='divUn'><input type="text" id="inputUn" value="Coucou" readonly="readonly" /></div>
             <div id='divDeux'><input type="text" id="inputDeux" value="Coucou" readonly="readonly" /></div>
         </article>
-        <article>
+        <article id="commande">
+            <h2>Commande</h2>
             <input id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()"/>
             <input id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()"/>
             <select name="selectDiv" id="selectDiv">
