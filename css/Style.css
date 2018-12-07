@@ -1,0 +1,17 @@
+article
+{
+width: 500px;
+height: 500px;
+border : solid black 1px;
+}
+header
+{
+display: flex;
+justify-content:space-around;
+align-items: center;
+height:200px;
+}
+.flex
+{
+display: flex;
+}
