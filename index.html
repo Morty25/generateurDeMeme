@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,60 +9,88 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>
-            <img src="images/logo-super-generator.png" width='75%'>
-        </h1>
-        <div>
-        <button id="home" class="header">Home</button>
-        <button id="generateur" class="header">Générateur</button>
-        </div>
-    </header>
-    <section id='carousel'>
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner ">
-                    <div class="carousel-item active">
-                        <img src="images/meme/captain.png" width="200" height="200" alt="">
-                        <img src="images/meme/cat&bat.png" width="200" height="200" alt="">
-                        <img src="images/meme/cat.png" width="200" height="200" alt="">
-                        <img src="images/meme/wonder.png" width="200" height="200" alt="">
-                        <img src="images/meme/tornade.png" width="200" height="200" alt="">
+        <!--Main Navigation-->
+        <header>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                        <!-- <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button> -->
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Meme Generator</a>
+                            </li>
+                          </ul>
                         </div>
-                    <div class="carousel-item">
-                        <img src="images/meme/superman&bat.png" width="200" height="200" alt="">
-                        <img src="images/meme/oups.png" width="200" height="200" alt="">
-                        <img src="images/meme/omg.png" width="200" height="200" alt="">
-                        <img src="images/meme/exemple.png" width="200" height="200" alt="">
-                        <img src="images/meme/deadpool.png" width="200" height="200" alt="">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Par la</span>
-                </a>
-                <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Par ici</span>
-                </a>
+                      </nav>
+
+            <div class="view">
+                <img src="images/logo-super-generator.png" width='75%'>
             </div>
-        </section>
-    <div class="flex">
-        <article id="article" onmousedown="curseur(event);">
-            <div id='divUn'><input type="text" id="inputUn" value="Coucou" readonly="readonly" /></div>
-            <div id='divDeux'><input type="text" id="inputDeux" value="Coucou" readonly="readonly" /></div>
-        </article>
-        <article id="commande">
-            <h2>Commande</h2>
-            <input id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()"/>
-            <input id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()"/>
-            <select name="selectDiv" id="selectDiv">
-                <option value="rien">Rien</option>
-                <option value="divUn">Div Un</option>
-                <option value="divDeux">Div Deux</option>
-            </select>
-            <input type="range" min="10" max="100" step="1" value="25" id="inputRange" oninput="grossirText()">
-        </article>
+
+        </header>
+
+        <!-- <div>
+            <button id="home" class="header">Home</button>
+            <button id="generateur" class="header">Générateur</button>
+            <h1>
+                <img src="images/logo-super-generator.png" width='75%'>
+            </h1>
+        </div> -->
+   
+    <section id='carousel'>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="images/meme/captain.png"  height="200" alt="">
+                    <img src="images/meme/cat&bat.png"  height="200" alt="">
+                    <img src="images/meme/cat.png"  height="200" alt="">
+                    <img src="images/meme/wonder.png"  height="200" alt="">
+                    <img src="images/meme/tornade.png"  height="200" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/meme/superman&bat.png"  height="200" alt="">
+                    <img src="images/meme/oups.png"  height="200" alt="">
+                    <img src="images/meme/omg.png"  height="200" alt="">
+                    <img src="images/meme/exemple.png"  height="200" alt="">
+                    <img src="images/meme/deadpool.png"  height="200" alt="">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Par la</span>
+            </a>
+            <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Par ici</span>
+            </a>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <article id="article" class="col-md-8" onmousedown="curseur(event);">
+                <div id='divUn'><input type="text" id="inputUn" value="Coucou" readonly="readonly" /></div>
+                <div id='divDeux'><input type="text" id="inputDeux" value="Coucou" readonly="readonly" /></div>
+            </article>
+            <article id="commande" class="col-md-4">
+                <h2>Commande</h2>
+                <input id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()" />
+                <input id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()" />
+                <select name="selectDiv" id="selectDiv">
+                    <option value="rien">Rien</option>
+                    <option value="divUn">Div Un</option>
+                    <option value="divDeux">Div Deux</option>
+                </select>
+                <input type="range" min="10" max="100" step="1" value="25" id="inputRange" oninput="grossirText()">
+            </article>
+        </div>
     </div>
     <div>
         <button id="envoyer">Envoyer</button>
@@ -72,4 +101,5 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/js.js"></script>
 </body>
+
 </html>
