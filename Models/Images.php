@@ -1,11 +1,8 @@
-
-
-
 <?php
             try
             {
                 // On se connecte à MySQL
-                $dbh = new PDO('mysql:host=localhost;dbname=memegenerator', 'root', '',array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+                $bdd = new PDO('mysql:host=localhost;dbname=generator', 'root', '',array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
             }
             catch(Exception $e)
             {
@@ -16,17 +13,10 @@
     
         /*  Fonction pour afficher les images de la bibliothèque  */ 
         function afficheImages() {
-            global $bdd;
-          // $images=nom de veriable , image=nom de table en sql
-    $images = $dbh->query('SELECT * FROM images');
+        global $bdd;
+        // $images=nom de veriable , image=nom de table en sql
+        $images = $bdd->query('SELECT * FROM images');
 
-    return $images->fetchAll();
+        return $images->fetchAll();
 
-}
-
-
-
- 
-
-
-
+        }

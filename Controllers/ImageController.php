@@ -6,7 +6,7 @@ include('Models/Images.php');
 // $movie = getOneMovie($id);
 
 //traiter les données
-$image['image'] = ucfirst($image['image']); //Mets une majuscule au nom du réalisateur
+$images = afficheImages();
 
 //inclure la vue
 include('Views/ImageView.php');
