@@ -1,5 +1,5 @@
 <?php
-include('Models/Images.php');
+include('Models/Home.php');
 $images = afficheImages();
 
 //inclure la vue
