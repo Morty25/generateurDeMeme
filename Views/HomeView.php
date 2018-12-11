@@ -10,7 +10,41 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/Style.css"/>
 </head>
+
+
+
+
+
+
 <body>
+
+<!--Main Navigation-->
+<header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button> -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Meme Generator</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="view">
+    <img src="images/logo-super-generator.png" width='75%'>
+</div>
+
+</header>
+
+
 <section id='carousel'>
 
 <!-- Echo images via url de la BDD grâce à la fonction afficheImages() dans images.php  -->
@@ -95,7 +129,7 @@
                     <a id="on-tw" href="https://twitter.com">Twitter</a><br>
                     <br>
 
-              <span >Crated by laura,anjum,alain and emilie : ACS students .copy rights 2018</span>
+              <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span>
             </div>
           </footer>
         
