@@ -40,3 +40,14 @@ function envoyerTextDeux(){
     var textRecu = document.getElementById("inputDeux");
     textRecu.value = textEnvoyer.value;
 }
+
+var node = document.getElementById('article');
+var btn = document.getElementById('envoyer');
+
+btn.onclick = function() {
+    node.innerHTML = "Bla."
+    domtoimage.toBlob(document.getElementById('article'))
+    .then(function(blob) {
+        window.saveAs(blob, 'article.png');
+    });
+}
