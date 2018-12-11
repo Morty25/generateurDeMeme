@@ -3,7 +3,7 @@
 /*  On se connecte à la BDD  */
     try
     {
-        $bdd = new PDO("mysql:host=localhost;dbname=generator;charset=UTF8", "root", "Lolorainbow!");
+        $bdd = new PDO("mysql:host=localhost;dbname=generator;charset=UTF8", "root", "");
     }
     catch(Exception $e)
     {
