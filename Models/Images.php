@@ -1,15 +1,7 @@
                        <!-- Pas de Balise HTML dans le model -->
 <?php
 /*  On se connecte à la BDD  */
-    try
-    {
-        $bdd = new PDO("mysql:host=localhost;dbname=generator;charset=UTF8", "root", "");
-    }
-    catch(Exception $e)
-    {
-        die('Erreur : '.$e->getMessage());
-    }
-            
+include('connexion.php');
     
 /*  Fonction pour afficher les images de la bibliothèque  */ 
     function afficheImages() {
