@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 07, 2018 at 04:13 PM
+-- Generation Time: Dec 10, 2018 at 09:33 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -39,16 +39,16 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`id`, `nom`, `url`) VALUES
-(1, 'Catwoman & Batman', 'cat&bat.png'),
-(2, 'Batman&Catwoman', 'bat&cat.png'),
-(3, 'Captain', 'captain.png'),
-(4, 'WonderWoman', 'classe.png'),
-(5, 'Deadpool', 'deadpool.png'),
-(6, 'Wonderwoman2', 'wonder.png'),
-(7, 'Superman&Batman', 'superman&bat.png'),
-(8, 'Tornade', 'tornade.png'),
-(9, 'Deadpool_omg', 'omg.png'),
-(10, 'Deadpool_oups', 'oups.png');
+(1, 'Catwoman & Batman', 'cat&bat.jpg\r\n\r\n'),
+(2, 'Batman&Catwoman', 'bat&cat.jpg'),
+(3, 'Captain', 'captain.jpg'),
+(4, 'WonderWoman', 'classe.jpg'),
+(5, 'Deadpool', 'deadpool.jpg'),
+(6, 'Wonderwoman2', 'wonder.jpg'),
+(7, 'Superman&Batman', 'superman&bat.jpg'),
+(8, 'Tornade', 'tornade.jpg'),
+(9, 'Deadpool_omg', 'omg.jpg'),
+(10, 'Deadpool_oups', 'oups.jpg');
 
 -- --------------------------------------------------------
 
