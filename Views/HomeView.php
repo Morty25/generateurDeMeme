@@ -8,7 +8,7 @@
     <title>Super Generator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/Style.css"/>
 </head>
 <body>
 <section id='carousel'>
@@ -49,27 +49,64 @@
     
 
 
-<!-- Formulaire pour avoir la variable POST pour stocker les mm réalisés (fonction stockMM)  -->
-<form action="?page=Images" method="post">
-    <div>
-        <label for="titre">Titre du MM:</label>
-        <input type="text" name="titre" id="titre">
-    </div>
-    <div>
-        <label for="texte">Texte :</label>
-        <input type="text" name="texte" id="texte">
-    </div>
-    <div>
-        <input type="hidden" name="image" value="<?php.$_POST['image']?>">
-    </div>
-    <div class="button">
-        <input id="MM" type="submit" name="Enregistrer" value="Enregistrer">
-        <input type="submit" name="Telecharger" value="Télécharger">
-    </div>
-</form>
-<script src="js/jquery-3.2.1.slim.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/js.js"></script>
+<div class="container">
+        <div class="row">
+            <article id="article" class="col-md-8" onmousedown="curseur(event);">
+                <div id='divUn'><input type="text" id="inputUn" value="Coucou" readonly="readonly" /></div>
+                <div id='divDeux'><input type="text" id="inputDeux" value="Coucou" readonly="readonly" /></div>
+            </article>
+            <article id="commande" class="col-md-4">
+                <h2>Commande</h2>
+                <input id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()" />
+                <input id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()" />
+                <select name="selectDiv" id="selectDiv">
+                    <option value="rien">Rien</option>
+                    <option value="divUn">Div Un</option>
+                    <option value="divDeux">Div Deux</option>
+                </select>
+                <input type="range" min="10" max="100" step="1" value="25" id="inputRange" oninput="grossirText()">
+            </article>
+        </div>
+</div>
+<div>
+        <button id="envoyer">Envoyer</button>
+        <button id="partager">Partager</button>
+</div>
+    
+<!-- this the form if we allow user to upload his image -->
+    <!-- <form action="recup_donnees.php" method="post" enctype="multipart/form-data">
+
+        <p>
+        <label for="up" class="label">choose a file to upload</label><br><br>
+        
+        <input type="text" name="fileName" placeholder="enter a new name">
+        </p>
+        <p>
+        <input type="file" name="fichier_upload">
+        </p>
+        <p>
+        <input type="submit" value="Download">
+        </p> -->
+
+
+        <footer class="footer">
+            <div class="container">
+                    <a id="on-fb" href="https://www.facebook.com">Facebook</a>
+                    <a id="on-tw" href="https://twitter.com">Twitter</a><br>
+                    <br>
+
+              <span >Crated by laura,anjum,alain and emilie : ACS students .copy rights 2018</span>
+            </div>
+          </footer>
+        
+         
+            
+            
+           
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
+
 </body>
 </html>
