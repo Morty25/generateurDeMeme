@@ -1,7 +1,8 @@
+                        <!-- Pas de Balise HTML dans le controller -->
 <?php
 include('Models/Images.php');
 
-    /* On crée les images sur le navigateur  */
+/* On crée les images sur le navigateur  */
 
     //On définit le type d'image pour que le PHP interprète les caractères
     header('Content-type: image/jpeg');
@@ -23,9 +24,9 @@ include('Models/Images.php');
 
     //Créer une vraie image JPEG (Mais elle n'existe pas sur le disque dur! On l'affiche simplement) 
     //imagejpeg($img,$chemin.$nom); On renseigne le chemin en paramètre pour l'enregistrer sur le disque dur
-    imagejpeg($img);
+    imagejpeg($img,$chemin);
     
-
+    
     //stocker en BDD
 
     //rediriger vers la page du meme
