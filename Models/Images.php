@@ -1,3 +1,4 @@
+                       <!-- Pas de Balise HTML dans le model -->
 <?php
 /*  On se connecte à la BDD  */
     try
@@ -16,10 +17,15 @@
         $images = $bdd->query('SELECT url FROM images');
         return $images->fetchAll();
     } 
-
+// /* Fonction pour afficher une image par une pour le Caroussel */
+//     function affichageImage($id) {
+//         global $bdd;
+//         $image = $bdd->query('SELECT * FROM images WHERE id='.$id.';');
+//         return $image->fetch();
+//     }
 
 /* Fonction pour stocker les mm réalisés (insert titre + image) */
-    function stockMM($chemin) {
+    function stockMM($img,$chemin) {
         global $bdd;
         $MM= $bdd->prepare("INSERT INTO mm ('titre', 'image') VALUES (?, ?)");
         return $MM->execute(array($_POST['titre'], $_POST['image']));
