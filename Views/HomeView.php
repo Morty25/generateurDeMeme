@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Super Generator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/Style.css"/>
 </head>
 
@@ -49,38 +49,37 @@
 
 <!-- Echo images via url de la BDD grâce à la fonction afficheImages() dans images.php  -->
 
-    <div id="demo" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner ">
-            <!-- <div class="divAffichageImages">
-            </div> -->
-            <div class="carousel-item active">
-                <?php foreach ($images as $key => $valueimages) {
-                    if($key < 4){
-                    echo "<img id='MM' alt='images de MM' src=images/memes/".$valueimages['url'].">";
-                    }
-                } 
-                ?>
+
+            
+
+
+
+<section id='carousel'>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner ">
+                <?php foreach ($images as $key => $valueimages) : ?>
+                    <?php if( $key % 3 == 0) { ?>
+                        <div class="carousel-item <?php if($key ==0 ) echo 'active'; ?>">
+                    <?php } ?>
+                    <img id='MM' alt='images de MM' src="images/memes/<?=$valueimages['url']?>">
+                    <?php if ($key % 3 == 2 ) { ?>
+                    </div>
+                    <?php } ?>
+                <?php endforeach;  ?>
             </div>
-            <div class="carousel-item">
-                <?php foreach ($images as $key => $valueimages) {
-                    if($key < 9 && $key > 4){
-                    echo "<img id='MM' alt='images de MM' src=images/memes/".$valueimages['url'].">";
-                    }
-                } 
-                ?>
-            </div>
+            <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Par la</span>
+            </a>
+            <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Par ici</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Par la</span>
-        </a>
-        <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Par ici</span>
-        </a>
-    </div>
 </section>
-    
+
+             
+        
 
 
 <div class="container">

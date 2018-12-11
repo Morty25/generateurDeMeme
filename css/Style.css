@@ -8,6 +8,7 @@ padding:0px;
 body
 {
 text-align: center;
+background-color: rgb(194, 190, 190);
 }
 #article
 {
@@ -27,13 +28,19 @@ justify-content:space-around;
 height:200px;
 margin-top:3%;
 }
-.flex
+#flex
 {
 display: flex;
 justify-content: space-around;
+height: 150px;
 }
 #carousel
 {
 margin-bottom:5%;
 margin-top:5%;
+}
+img{
+vertical-align: middle;
+border-style: none;
+width: 31%;
 }
