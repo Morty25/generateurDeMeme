@@ -49,19 +49,14 @@
 
 <!-- Echo images via url de la BDD grâce à la fonction afficheImages() dans images.php  -->
 
-
-            
-
-
-
-<section id='carousel'>
+<section id='carousel' >
         <div id="demo" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner ">
+            <div class="carousel-inner">
                 <?php foreach ($images as $key => $valueimages) : ?>
                     <?php if( $key % 3 == 0) { ?>
                         <div class="carousel-item <?php if($key ==0 ) echo 'active'; ?>">
                     <?php } ?>
-                    <img id='MM' alt='images de MM' src="images/memes/<?=$valueimages['url']?>">
+                    <img class="miniature"id='MM' alt='images de MM' src="images/memes/<?=$valueimages['url']?>">
                     <?php if ($key % 3 == 2 ) { ?>
                     </div>
                     <?php } ?>
@@ -90,8 +85,8 @@
             </article>
             <article id="commande" class="col-md-4">
                 <h2>Commande</h2>
-                <input id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()" />
-                <input id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()" />
+                    <input id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()" />
+                     <input id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()" />
                 <select name="selectDiv" id="selectDiv">
                     <option value="rien">Rien</option>
                     <option value="divUn">Div Un</option>
@@ -125,12 +120,11 @@
         <footer class="footer">
             <div class="container">
                     <a id="on-fb" href="https://www.facebook.com">Facebook</a>
-                    <a id="on-tw" href="https://twitter.com">Twitter</a><br>
-                    <br>
+                    <a id="on-tw" href="https://twitter.com">Twitter</a><br> <br>
 
-              <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span>
+                    <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span>
             </div>
-          </footer>
+         </footer>
         
          
             

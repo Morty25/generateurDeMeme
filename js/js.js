@@ -11,7 +11,7 @@ function curseur(event){
     else if(select.value == 'divDeux'){
         var div = document.getElementById('divDeux');
         div.style.position = 'absolute';
-        div.style.top = x + 'px';
+        div.style.top = x+ + 'px';
         div.style.left = y + 'px';
     }
 }
@@ -50,4 +50,22 @@ btn.onclick = function() {
     .then(function(blob) {
         window.saveAs(blob, 'article.png');
     });
+}
+
+
+// pour choisir les image et les grondir fait par anjum
+var miniatures = document.getElementsByClassName("miniature");
+for (var miniature of miniatures) {
+    miniature.addEventListener("click", function(event) {
+        console.log(event.target.src)
+        afficheImage(event);
+        
+    });  
+}
+
+
+function afficheImage(event) {
+
+    document.getElementById("article").innerHTML = '<img id="ImageR" src=' + event.target.src + '>';
+
 }
