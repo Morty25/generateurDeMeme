@@ -1,4 +1,8 @@
 <!-- Pas de HTML dans les models et controllers : première balise HTML dans la vue-->
-<?php print_r($images);  ?>
-
-<?=$images['url']?>
+<?php foreach ($images as $key => $value ) {
+   ?>
+   <img src="images/memes/<?php echo $value['url'];?>" alt="image">
+   
+   <?php 
+}
+?>
