@@ -1,49 +1,59 @@
 html, body
 {
-height:100%;
-width: 100%;
-margin:0px;
-padding:0px;
+    height:100%;
+    width: 100%;
+    margin:0px;
+    padding:0px;
 }
+
 body
 {
-text-align: center;
-background-color: rgb(194, 190, 190);
+    text-align: center;
+    
 }
+
 #article
 {
-width:600px;
-height:600px;
-border : solid black 1px;
+    z-index: 100;
+    width:600px;
+    height:600px;
+    border : solid black 1px;
 }
+
 #commande
 {
-display:flex;
-flex-direction: column
+    display:flex;
+    flex-direction: column
 }
+
 header
 {
-display: flex;
-justify-content:space-around;
-height:200px;
-margin-top:3%;
+    display: flex;
+    justify-content:space-around;
+    height:200px;
+    margin-top:3%;
 }
+
 #flex
 {
-display: flex;
-justify-content: space-around;
-height: 150px;
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
 }
+
 #carousel
 {
-margin-bottom:5%;
-margin-top:5%;
+    margin-bottom:5%;
+    margin-top:5%;
 }
+
 img{
-vertical-align: middle;
-border-style: none;
-width: 31%;
+    padding-top: 70px;
+    vertical-align: middle;
+    border-style: none;
+    width: 31%;
 }
+
 #ImageR{
     height:600px;
     width: 700px;

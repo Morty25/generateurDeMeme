@@ -71,8 +71,9 @@
 <div class="container">
         <div class="row">
             <article id="article" class="col-md-8" onmousedown="curseur(event);">
-                <div id='divUn'><input type="text" id="inputUn" value="Coucou" readonly="readonly" /></div>
-                <div id='divDeux'><input type="text" id="inputDeux" value="Coucou" readonly="readonly" /></div>
+                <div id='divUn'><input type="text" id="texteHaut" value="Coucou" readonly="readonly" /></div>
+                <div id='divDeux'><input type="text" id="texteBas" value="Coucou" readonly="readonly" /></div>
+                <div id="image"></div>
             </article>
             <article id="commande" class="col-md-4">
                 <h2>Commande</h2>
