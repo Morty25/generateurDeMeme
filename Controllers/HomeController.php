@@ -3,7 +3,5 @@
 include('Models/Images.php');
 
 $images = afficheImages();
-$MM= imagejpeg($img,$chemin);
-
-
+// $MM= imagejpeg($img,$chemin);
 include('Views/HomeView.php');

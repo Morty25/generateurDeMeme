@@ -53,7 +53,7 @@ btn.onclick = function() {
 }
 
 
-// pour choisir les image et les grondir fait par anjum
+// pour choisir les image et les grondir 
 var miniatures = document.getElementsByClassName("miniature");
 for (var miniature of miniatures) {
     miniature.addEventListener("click", function(event) {
