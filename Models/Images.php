@@ -8,24 +8,22 @@ include('connexion.php');
         global $bdd;
         $images = $bdd->query('SELECT url FROM images');
         return $images->fetchAll();
-    } 
-
-/* Fonction pour stocker les mm réalisés (insert titre + image) */
-    function stockMM($img,$chemin) {
-        global $bdd;
-        $MM= $bdd->prepare("INSERT INTO mm ('titre', 'image') VALUES (?, ?)");
-        return $MM->execute(array($_POST['titre'], $_POST['image']));
-        // $id_MMrecuperer = $bdd->lastInsertId();
     }
 
-//     //function to retrive meme already done from table mm.
 
-function getAllMeme() {
-    global $bdd;
+    
+// /* Fonction pour stocker les mm réalisés (image) */
+//     function stockMM($img,$chemin) {
+//         global $bdd;
+//         $MM= $bdd->prepare("INSERT INTO mm ('image') VALUES ( ?)");
+//         return $MM->execute(array($_POST['image']));
+//         // $id_MMrecuperer = $bdd->lastInsertId();
+//     }
 
-    $images =$bdd->query('SELECT * FROM mm');
 
-    return $images->fetchAll();
+// // Send Image to Browser, give varible name from create image
+// imagejpeg( $imagevar);
 
-}
+// // Clear Memory ,imagedestroy is php predefined funtion () frees any memory associated with an image ,$imagevar is variable which i created on top
+// imagedestroy( $imagevar); 
 

@@ -39,7 +39,7 @@
 
 <section id='carousel'>
 
-<!-- Echo images via url de la BDD grâce à la fonction afficheImages() dans images.php  -->
+<!-- inseration of images into carousel -->
 
 <section id='carousel' >
         <div id="demo" class="carousel slide" data-ride="carousel">
