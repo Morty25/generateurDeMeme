@@ -14,10 +14,28 @@ body
 
 #article
 {
-    z-index: 100;
+    position: relative;
     width:600px;
     height:600px;
     border : solid black 1px;
+}
+
+#texteHaut {
+   background-color: transparent;
+   position: absolute;
+   left: 50%;
+   top: 5%;
+   border: 0ch;
+   color: pink;
+}
+
+#texteBas {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    background-color: transparent;
+    border: 0ch;
+    color: pink;
 }
 
 #commande
