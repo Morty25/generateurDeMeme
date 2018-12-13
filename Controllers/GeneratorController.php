@@ -2,7 +2,10 @@
 <?php
 include('Models/Images.php');
 
-$images = getAllMeme();
+$images = afficheImages();
+// $MM= imagejpeg($img,$chemin);
 
 
-include('Views/HomeView.php');
+include('Views/GeneratorView.php');
+
+
