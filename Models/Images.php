@@ -9,12 +9,6 @@ include('connexion.php');
         $images = $bdd->query('SELECT url FROM images');
         return $images->fetchAll();
     } 
-// /* Fonction pour afficher une image par une pour le Caroussel */
-//     function affichageImage($id) {
-//         global $bdd;
-//         $image = $bdd->query('SELECT * FROM images WHERE id='.$id.';');
-//         return $image->fetch();
-//     }
 
 /* Fonction pour stocker les mm réalisés (insert titre + image) */
     function stockMM($img,$chemin) {

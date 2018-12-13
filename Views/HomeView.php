@@ -40,6 +40,27 @@
 
 </header>
 
+<main role="main">
+        <div class="album py-5">
+
+            <div class="container">
+                <div class="row">
+                    <?php foreach ($images as $key => $image):?>
+                        <div class="col-md-4">
+                             <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top" src= "<?= 'memedone/'.$image['image']?>">
+                               
+                             </div>
+                         </div>
+                            <?php endforeach; ?> 
+                </div>
+                    
+               
+            </div>
+           
+        </div>
+       
+    </main>
 
 
 
@@ -59,8 +80,6 @@
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-       
     <script src="js/js.js"></script>
 </body>
 </html>
