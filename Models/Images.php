@@ -23,3 +23,5 @@ include('connexion.php');
         return $MM->execute(array($_POST['titre'], $_POST['image']));
         // $id_MMrecuperer = $bdd->lastInsertId();
     }
+
+    
