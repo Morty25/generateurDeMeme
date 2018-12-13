@@ -1,3 +1,6 @@
+
+@font
+
 html, body
 {
     height:100%;
@@ -23,20 +26,22 @@ body
 #texteHaut {
    background-color: transparent;
    position: absolute;
-   left: 50%;
+   left: 20%;
    top: 5%;
    border: 0ch;
-   color:crimson;
+   color:darkgray;
+   font-size: 30px;
    z-index: 2;
 }
 
 #texteBas {
     position: absolute;
-    left: 50%;
+    left: 20%;
     bottom: 5%;
     background-color: transparent;
     border: 0ch;
-    color:crimson;
+    color:darkgray;
+    font-size: 30px;
     z-index: 2;
 }
 
@@ -96,3 +101,52 @@ header
     /* height:600px;
     width: 760px; */
 }
+
+.btn {
+    background:#11708f; 
+    color:white;
+    margin-top: 15px;
+}
+
+ /* Style all font awesome icons */
+ .fa {
+    padding:15%;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 40%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  } 
+
+  .footer {
+    position: relative;
+    margin-top: 50px;
+}
+
+.socialmedia {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    /* margin-top: 50px; */
+
+}
+

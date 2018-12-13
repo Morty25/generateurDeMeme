@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/Style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -28,6 +29,10 @@
             </li>
         </ul>
     </div>
+    <div class="socialmedia">
+        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+     </div>
 </nav>
 
 <div class="view">
@@ -92,16 +97,20 @@
            
 </div>
          <div>
-                <button id="envoyer" onclick="sendData ({test:'ok'})">Envoyer</button>
-                <button id="partager">Partager</button>
+                <a id="enregistrer" href="#" class="btn active" role="button" >Enregistrer dans la gallerie</a>
+                <a id="envoyer" href="#" class="btn active" role="button" onclick="sendData ({test:'ok'})">Envoyer</a> 
+                <a id="partager" href="#" class="btn active" role="button" >Partager</a>              
         </div>
 
          <footer class="footer">
-                <div class="container">
-                    <a id="on-fb" href="https://www.facebook.com">Facebook</a>
-                    <a id="on-tw" href="https://twitter.com">Twitter</a><br> <br>
+             <!-- <div class="socialmedia">
+                <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+            </div> -->
 
-                    <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span>
+
+        
+                    <!-- <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span> -->
                 </div>
          </footer>
 
