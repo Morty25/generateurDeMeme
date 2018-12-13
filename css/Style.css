@@ -26,7 +26,8 @@ body
    left: 50%;
    top: 5%;
    border: 0ch;
-   color: pink;
+   color:crimson;
+   z-index: 2;
 }
 
 #texteBas {
@@ -35,7 +36,8 @@ body
     bottom: 5%;
     background-color: transparent;
     border: 0ch;
-    color: pink;
+    color:crimson;
+    z-index: 2;
 }
 
 #commande
@@ -65,14 +67,32 @@ header
     margin-top:5%;
 }
 
-img{
+.logo {
     padding-top: 70px;
+    width: 75%;
+}
+
+ img{
     vertical-align: middle;
     border-style: none;
     width: 31%;
+} 
+
+
+#image {
+    background-size:100% auto;
 }
 
+
 #ImageR{
-    height:600px;
-    width: 700px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+
+    
+    /* height:600px;
+    width: 760px; */
 }

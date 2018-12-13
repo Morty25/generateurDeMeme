@@ -2,8 +2,10 @@
 <?php
 include('Models/Images.php');
 
-$MM = afficheImages();
+$images = afficheImages();
 // $MM= imagejpeg($img,$chemin);
 
 
-include('Views/HomeView.php');
+include('Views/GeneratorView.php');
+
+
