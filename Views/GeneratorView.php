@@ -97,6 +97,7 @@
            
 </div>
          <div>
+         
                 <a id="enregistrer" href="#" class="btn active" role="button" >Enregistrer dans la gallerie</a>
                 <a id="envoyer" href="#" class="btn active" role="button" onclick="sendData ({test:'ok'})">Envoyer</a> 
                 <a id="partager" href="#" class="btn active" role="button" >Partager</a>              
