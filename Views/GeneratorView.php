@@ -82,7 +82,7 @@
             <article id="commande" class="col-md-4">
                 
                 <h2>Commande</h2>
-                <div id="block">
+                
                     <input id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()" />
                      <input id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()" />
                 <select name="selectDiv" id="selectDiv">
@@ -92,7 +92,7 @@
                 </select>
                 <input type="range" min="10" max="100" step="1" value="25" id="inputRange" oninput="grossirText()">
             </article>
-            </div>
+            
         </div>    
 
             

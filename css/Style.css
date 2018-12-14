@@ -48,13 +48,7 @@ body
 #commande
 {
     display:flex;
-    flex-direction: column
-.block
-{
-    font-size:16px;
-}
-   
-    
+    flex-direction: column   
 }
 H2
 {
@@ -160,13 +154,15 @@ header
 
 }
 /* // for responsive with jquery */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 480px){
         body, #article{
         width:100%;
 }
          h2{
          font-size:14px; 
 }
-        .container, .footer{
-         font-size:12px; 
+         .footer{
+         font-size:14px; 
+}
+
 }
