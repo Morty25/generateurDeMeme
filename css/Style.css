@@ -1,6 +1,4 @@
 
-@font
-
 html, body
 {
     height:100%;
@@ -20,7 +18,6 @@ body
     position: relative;
     width:600px;
     height:600px;
-    border : solid black 1px;
 }
 
 #texteHaut {
@@ -89,7 +86,8 @@ header
 
 
 #image {
-    background-size:100% auto;
+    width: 700px;
+    height: 600px;
 }
 
 
@@ -154,7 +152,10 @@ header
 
 }
 /* // for responsive with jquery */
-@media screen and (max-width: 480px){
+/* // Small devices (landscape phones, 576px and up) */
+
+
+@media screen and (min-width: 480px){
         body, #article{
         width:100%;
 }
@@ -165,4 +166,16 @@ header
          font-size:14px; 
 }
 
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 900px) {
+
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 900px) {
+    
 }

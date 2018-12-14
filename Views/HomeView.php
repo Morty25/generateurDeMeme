@@ -58,13 +58,6 @@
         </div>
        
     </main>
-
-
-
-
-
-
-
          <footer class="footer">
                 <div class="container">
                     <!-- <a id="on-fb" href="https://www.facebook.com">Facebook</a>
@@ -73,7 +66,6 @@
                     <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span>
                 </div>
          </footer>
-
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -1,4 +1,3 @@
-                       <!-- Pas de Balise HTML dans le model -->
 <?php
 /*  On se connecte à la BDD  */
 include('connexion.php');

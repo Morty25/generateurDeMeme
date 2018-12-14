@@ -48,17 +48,6 @@ function envoyerTextDeux(){
 var node = document.getElementById('article');
 var btn = document.getElementById('envoyer');
 
-
-
-// btn.onclick = function() {
-//     node.innerHTML = "Bla."
-//     domtoimage.toBlob(document.getElementById('article'))
-//     .then(function(blob) {
-//         window.saveAs(blob,'article.png');
-//     });
-// }
-
-
 // pour choisir les image et les grondir fait par anjum
 var miniatures = document.getElementsByClassName("miniature");
 for (var miniature of miniatures) {
@@ -72,8 +61,6 @@ function afficheImage(event) {
     document.getElementById("image").innerHTML = '<img id="ImageR" src=' + event.target.src + '>';
 
 }
-
-
 // test envoie meme 
 
 btn.onclick = function sendData(data) {
@@ -111,3 +98,8 @@ btn.onclick = function sendData(data) {
     // Finalement, envoyez les données.
     XHR.send(urlEncodedData);
   }
+  function afficheImage(event) {
+    document.getElementById("article").innerHTML = '<img id="image" src=' + event.target.src + '>';
+    document.getElementById("Rendu").value = event.target.src;
+}
+

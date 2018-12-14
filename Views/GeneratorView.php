@@ -80,35 +80,51 @@
                 <div id="image"></div>
             </article>
             <article id="commande" class="col-md-4">
-                
+
+            <section>
+<!-- <form class="espace" name="my_form" action="?page=meme" method="post">
+
+<input type="text" name="texte1" placeholder="Texte 1" class="ecrit1" id="ecrit1"><br/>
+<input type="hidden" id="left1" name="left1" value=""><br/>
+<input type="hidden" id="top1" name="top1" value=""><br/>
+<input type="hidden" id="Rendu" name="Rendu" value=""><br/>
+
+<input type="text" name="texte2" placeholder="Texte 2" class="ecrit2" id="ecrit2"><br/>
+<input type="hidden" id="left2" name="left2" value=""><br/>
+<input type="hidden" id="top2" name="top2" value=""><br/>
+
+
+
+{# <input type="submit" value="Génère ton mème" id="bouton_envoi" name="bouton_envoi"> #}
+<button type="submit" value="Génère ton mème" id="bouton_envoi" name="bouton_envoi" class="btn btn-warning waves-effect">Génère ton mème</button>
+</form> -->
+</section> 
                 <h2>Commande</h2>
-                
-                    <input id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()" />
-                     <input id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()" />
-                <select name="selectDiv" id="selectDiv">
-                    <option value="rien">Rien</option>
-                    <option value="divUn">Div Un</option>
-                    <option value="divDeux">Div Deux</option>
-                </select>
+                <form action="?page=meme" method="post" enctype="multipart/form-data">
+                    <input name="textehaut"id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()" />
+                    <input name="textebas" id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()" />
+                    <input type="hidden" id="Rendu" name="Rendu" value=""><br/>
+                                <option value="rien">Rien</option>
+                                <option value="divUn">Div Un</option>
+                                <option value="divDeux">Div Deux</option>
+                            </select>
                 <input type="range" min="10" max="100" step="1" value="25" id="inputRange" oninput="grossirText()">
             </article>
-            
-        </div>    
-
-            
-            
+   
+        </div>   
            
 </div>
-         <div>
+        <button type="submit" value="Génère ton mème" id="bouton_envoi"  name="envoyer"  >Génère votre mème</button>            
+                     
+</form>
+         <!-- <div>
                 <a id="enregistrer" href="#" class="btn active" role="button" >Enregistrer dans la gallerie</a>
-                <a id="envoyer" href="#" class="btn active" role="button" onclick="sendData ({test:'ok'})">Envoyer</a> 
-                <a id="partager" href="#" class="btn active" role="button" >Partager</a>              
-        </div>
-
+                <!-- <a id="envoyer" href="#" class="btn active" role="button" onclick="sendData ({test:'ok'})">Envoyer</a> 
+                <a id="partager" href="#" class="btn active" role="button" >Partager</a>               -->
+        <!-- </div>  -->
         <footer class="footer">
                 <div class="container">
-                    <!-- <a id="on-fb" href="https://www.facebook.com">Facebook</a>
-                    <a id="on-tw" href="https://twitter.com">Twitter</a><br> <br> -->
+            
 
                     <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span>
                 </div>
