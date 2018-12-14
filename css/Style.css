@@ -1,4 +1,3 @@
-
 html, body
 {
     height:100%;
@@ -98,11 +97,12 @@ header
     left: 0px;
     top: 0px;
     z-index: 0;
-
+    
     
     /* height:600px;
     width: 760px; */
 }
+
 
 .btn {
     background:#11708f; 
@@ -144,6 +144,9 @@ header
     margin-top: 50px;
 }
 
+input, select {
+    margin-bottom: 20px;
+}
 .socialmedia {
     position: absolute;
     right: 10%;
@@ -174,8 +177,26 @@ header
 
 }
 
+<<<<<<< HEAD
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 900px) {
     
+=======
+@media screen and (max-width:575px) {/*MOBILE*/
+    .logo {
+        width: 100%;
+    }
+    .view {
+        height:100px;
+    }
+    h2{
+    font-size:14px; 
+    }
+    .footer{
+    font-size:14px; 
+    }
+
+
+>>>>>>> 38b33a6d975571ee506ae9fc94e757ffdac43db1
 }

@@ -72,8 +72,7 @@
 <div class="container">
         <div class="row">
             <article id="article" class="col-md-8" onmousedown="curseur(event);">
-                <!-- <div id='divUn'><input type="text" id="texteHaut" value="Coucou" readonly="readonly" /></div>
-                <div id='divDeux'><input type="text" id="texteBas" value="Coucou" readonly="readonly" /></div> -->
+  
 
                 <div id="texteHaut"> coucou </div>
                 <div id="texteBas"> coucou </div>
@@ -82,22 +81,7 @@
             <article id="commande" class="col-md-4">
 
             <section>
-<!-- <form class="espace" name="my_form" action="?page=meme" method="post">
 
-<input type="text" name="texte1" placeholder="Texte 1" class="ecrit1" id="ecrit1"><br/>
-<input type="hidden" id="left1" name="left1" value=""><br/>
-<input type="hidden" id="top1" name="top1" value=""><br/>
-<input type="hidden" id="Rendu" name="Rendu" value=""><br/>
-
-<input type="text" name="texte2" placeholder="Texte 2" class="ecrit2" id="ecrit2"><br/>
-<input type="hidden" id="left2" name="left2" value=""><br/>
-<input type="hidden" id="top2" name="top2" value=""><br/>
-
-
-
-{# <input type="submit" value="Génère ton mème" id="bouton_envoi" name="bouton_envoi"> #}
-<button type="submit" value="Génère ton mème" id="bouton_envoi" name="bouton_envoi" class="btn btn-warning waves-effect">Génère ton mème</button>
-</form> -->
 </section> 
                 <h2>Commande</h2>
                 <form action="?page=meme" method="post" enctype="multipart/form-data">
@@ -117,11 +101,7 @@
         <button type="submit" value="Génère ton mème" id="bouton_envoi"  name="envoyer"  >Génère votre mème</button>            
                      
 </form>
-         <!-- <div>
-                <a id="enregistrer" href="#" class="btn active" role="button" >Enregistrer dans la gallerie</a>
-                <!-- <a id="envoyer" href="#" class="btn active" role="button" onclick="sendData ({test:'ok'})">Envoyer</a> 
-                <a id="partager" href="#" class="btn active" role="button" >Partager</a>               -->
-        <!-- </div>  -->
+         
         <footer class="footer">
                 <div class="container">
             

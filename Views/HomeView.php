@@ -1,5 +1,4 @@
-                        
-                        <!-- Balise HTML dans la vue -->
+                                    <!-- Balise HTML dans la vue -->
 <!DOCTYPE html>
 <html lang = "fr">
 <head>
@@ -9,11 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/Style.css"/>
-
 </head>
 
 <body>
-
 <!--Main Navigation-->
 <header>
 
