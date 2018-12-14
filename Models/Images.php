@@ -9,6 +9,8 @@ include('connexion.php');
         $images = $bdd->query('SELECT url FROM images');
         return $images->fetchAll();
     } 
+
+    
 // /* Fonction pour afficher une image par une pour le Caroussel */
 //     function affichageImage($id) {
 //         global $bdd;

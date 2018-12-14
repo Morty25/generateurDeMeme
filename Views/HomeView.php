@@ -1,5 +1,4 @@
-                        
-                        <!-- Balise HTML dans la vue -->
+                                    <!-- Balise HTML dans la vue -->
 <!DOCTYPE html>
 <html lang = "fr">
 <head>
@@ -11,13 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/Style.css"/>
 </head>
 
-
-
-
-
-
 <body>
-
 <!--Main Navigation-->
 <header>
 
@@ -43,7 +36,6 @@
 </div>
 
 </header>
-
 
 <section id='carousel'>
 

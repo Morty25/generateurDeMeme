@@ -2,8 +2,8 @@ var texteHaut = document.getElementById("texteHaut");
 var texteBas = document.getElementById("texteBas");
 
 function curseur(event){
-    var y = event.clientX;
-    var x = event.clientY;
+    var y = (event.clientX)-385;//left
+    var x = (event.clientY)-215;//top
     var select = document.getElementById('selectDiv');
     if(select.value == 'divUn'){
         var div = document.getElementById('texteHaut');
