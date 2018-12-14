@@ -80,7 +80,9 @@
                 <div id="image"></div>
             </article>
             <article id="commande" class="col-md-4">
+                
                 <h2>Commande</h2>
+                <div id="block">
                     <input id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()" />
                      <input id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()" />
                 <select name="selectDiv" id="selectDiv">
@@ -90,6 +92,7 @@
                 </select>
                 <input type="range" min="10" max="100" step="1" value="25" id="inputRange" oninput="grossirText()">
             </article>
+            </div>
         </div>    
 
             
@@ -102,23 +105,18 @@
                 <a id="partager" href="#" class="btn active" role="button" >Partager</a>              
         </div>
 
-         <footer class="footer">
-             <!-- <div class="socialmedia">
-                <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
-                <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
-            </div> -->
+        <footer class="footer">
+                <div class="container">
+                    <!-- <a id="on-fb" href="https://www.facebook.com">Facebook</a>
+                    <a id="on-tw" href="https://twitter.com">Twitter</a><br> <br> -->
 
-
-        
-                    <!-- <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span> -->
+                    <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span>
                 </div>
          </footer>
 
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-       
+    <script src="js/bootstrap.min.js"></script>  
     <script src="js/js.js"></script>
 </body>
 </html>

@@ -49,6 +49,16 @@ body
 {
     display:flex;
     flex-direction: column
+.block
+{
+    font-size:16px;
+}
+   
+    
+}
+H2
+{
+   font-size:  32px;
 }
 
 header
@@ -149,4 +159,14 @@ header
     /* margin-top: 50px; */
 
 }
-
+/* // for responsive with jquery */
+@media screen and (max-width: 375px){
+        body, #article{
+        width:100%;
+}
+         h2{
+         font-size:14px; 
+}
+        .container, .footer{
+         font-size:12px; 
+}
