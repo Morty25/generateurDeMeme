@@ -170,19 +170,11 @@ input, select {
 }
 
 }
-
-
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 900px) {
 
 }
 
-<<<<<<< HEAD
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 900px) {
-    
-=======
 @media screen and (max-width:575px) {/*MOBILE*/
     .logo {
         width: 100%;
@@ -196,7 +188,4 @@ input, select {
     .footer{
     font-size:14px; 
     }
-
-
->>>>>>> 38b33a6d975571ee506ae9fc94e757ffdac43db1
 }

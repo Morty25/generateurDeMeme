@@ -1,5 +1,5 @@
 <?php
-include('Models/connectionBDD.php');
+include('connexion.php');
 /***Ajoute les memes dans la base de données***/
 // Insérer $cheminImageFinale et $nom
 function insertMemeUrl($cheminImageFinale, $nom) {

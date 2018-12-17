@@ -1,4 +1,3 @@
-
 <?php
 /*  connexion à personnaliser pour chacun des utilisateurs */
     try
@@ -9,5 +8,3 @@
     {
         die('Erreur : '.$e->getMessage());
     }
-            
- 
