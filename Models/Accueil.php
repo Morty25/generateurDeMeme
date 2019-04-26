@@ -1,15 +1,13 @@
  <?php
-/*  On se connecte à la BDD  */
-include('connexion.php'); 
+    /*  On se connecte à la BDD  */
+    include('connexion.php');
 
-//     //function to retrive meme already done from table mm.
+    //     //function to retrive meme already done from table mm.
+    function getAllMeme()
+    {
+        global $bdd;
 
-function getAllMeme() {
-    global $bdd;
+        $images = $bdd->query('SELECT * FROM mm');
 
-    $images =$bdd->query('SELECT * FROM mm');
-
-    return $images->fetchAll();
-
-}
-
+        return $images->fetchAll();
+    }

@@ -46,7 +46,7 @@
                                
                              </div>
                          </div>
-                            <?php endforeach; ?> 
+                     <?php endforeach; ?> 
                 </div>
                     
                
@@ -57,9 +57,6 @@
     </main>
          <footer class="footer">
                 <div class="container">
-                    <!-- <a id="on-fb" href="https://www.facebook.com">Facebook</a>
-                    <a id="on-tw" href="https://twitter.com">Twitter</a><br> <br> -->
-
                     <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span>
                 </div>
          </footer>

@@ -32,7 +32,7 @@
     <div class="socialmedia">
         <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
         <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
-     </div>
+     </div> 
 </nav>
 
 <div class="view">
@@ -72,8 +72,6 @@
 <div class="container">
         <div class="row">
             <article id="article" class="col-md-8" onmousedown="curseur(event);">
-  
-
                 <div id="texteHaut"> coucou </div>
                 <div id="texteBas"> coucou </div>
                 <div id="image"></div>
@@ -84,31 +82,29 @@
 
 </section> 
                 <h2>Commande</h2>
-                <form action="?page=meme" method="post" enctype="multipart/form-data">
-                    <input name="textehaut"id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()" />
-                    <input name="textebas" id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()" />
-                    <input type="hidden" id="Rendu" name="Rendu" value=""><br/>
-                                <option value="rien">Rien</option>
-                                <option value="divUn">Div Un</option>
-                                <option value="divDeux">Div Deux</option>
-                            </select>
-                <input type="range" min="10" max="100" step="1" value="25" id="inputRange" oninput="grossirText()">
-            </article>
+    <form action="?page=meme" method="post" enctype="multipart/form-data">
+         <input name="textehaut"id="inputEnvoyeUn" type="text" oninput="envoyerTextUn()" />
+         <input name="textebas" id="inputEnvoyeDeux" type="text" oninput="envoyerTextDeux()" />
+         <input type="hidden" id="Rendu" name="Rendu" value=""><br/>
+            <option value="rien">Rien</option>
+            <option value="divUn">Div Un</option>
+            <option value="divDeux">Div Deux</option>
+    </select>
+        <input type="range" min="10" max="100" step="1" value="25" id="inputRange" oninput="grossirText()">
+    </article>
    
-        </div>   
+    </div>   
            
-</div>
-        <button type="submit" value="Génère ton mème" id="bouton_envoi"  name="envoyer"  >Génère votre mème</button>            
+        </div>
+        <button type="submit" value="Génère ton mème" id="bouton_envoi"  name="envoyer">Génère votre mème</button>            
                      
-</form>
+    </form>
          
-        <footer class="footer">
-                <div class="container">
-            
-
-                    <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span>
-                </div>
-         </footer>
+ <footer class="footer">
+    <div class="container">
+ <span >Crated by Laura, Anjum, alain and Emilie : ACS students .copy rights 2018</span>
+     </div>
+</footer>
 
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
